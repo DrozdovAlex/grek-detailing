@@ -1,0 +1,37 @@
+.content {
+  background-color: black;
+  border-bottom: solid 3px goldenrod;
+}
+.container {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+a,
+i {
+  font-size: 2rem;
+  margin-right: 5%;
+  color: white;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url(src/assets/logo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .col.work-hours {
+    display: none;
+  }
+}

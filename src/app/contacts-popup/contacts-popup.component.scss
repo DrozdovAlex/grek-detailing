@@ -1,0 +1,104 @@
+section {
+  visibility: hidden;
+  opacity: 0;
+
+  &.open {
+    visibility: inherit;
+    opacity: 1;
+  }
+
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.3s ease-in;
+
+  > div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 550px;
+    width: 500px;
+    background: white;
+    padding: 64px 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  i {
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 5px;
+    padding-right: 15px;
+
+    &.bi:hover {
+      color: goldenrod;
+    }
+  }
+
+  form {
+    border-top: 2px solid goldenrod;
+    padding-top: 20px;
+    input {
+      font-size: 20px;
+      background-color: white;
+      border-radius: 3px;
+      padding: 12px;
+      width: 100%;
+      margin-bottom: 10px;
+      &.ng-touched.ng-invalid {
+        border-color: crimson;
+      }
+    }
+
+    label {
+      width: 100%;
+    }
+
+    .button {
+      margin-top: 20px;
+      width: 100%;
+      color: white;
+      background-color: goldenrod;
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 10px 30px;
+      font-size: 20px;
+      transition: 0.5s;
+      &:hover {
+        border-color: goldenrod;
+        background-color: white;
+        color: goldenrod;
+      }
+
+      &:disabled {
+        border-color: gray;
+        background-color: gray;
+        color: white;
+      }
+    }
+  }
+
+  .politics {
+    padding-top: 20px;
+    font-size: 12px;
+    .conf {
+      color: goldenrod;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  section.open {
+    div {
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+}

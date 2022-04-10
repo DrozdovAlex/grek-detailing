@@ -1,0 +1,52 @@
+.service {
+  user-select: none;
+  height: 300px;
+  border-radius: 40px;
+  font-size: 18px;
+  padding: 40px;
+  border: 2px solid white;
+  color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+  background-position: center;
+  background-size: cover;
+
+  &__1 {
+    background-image: url(src/assets/polirovka.jpg);
+  }
+  &__2 {
+    background-image: url(src/assets/antidojd.jpg);
+  }
+  &__3 {
+    background-image: url(src/assets/him4istka.jpg);
+  }
+  &__4 {
+    background-image: url(src/assets/keram.jpg);
+  }
+  &__5 {
+    background-image: url(src/assets/antigrav.jpg);
+  }
+  &__6 {
+    background-image: url(src/assets/foger.jpg);
+  }
+  &__7 {
+    background-image: url(src/assets/shum.jpg);
+  }
+  &__8 {
+    background-image: url(src/assets/pdr.jpg);
+  }
+  &__9 {
+    background-image: url(src/assets/toner.jpg);
+  }
+  &__10 {
+    background-image: url(src/assets/antihrom.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .service:hover {
+    background-color: black;
+    border-color: goldenrod;
+    color: rgb(255, 255, 255);
+    background-image: none;
+  }
+}

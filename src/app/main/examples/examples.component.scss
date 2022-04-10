@@ -1,0 +1,42 @@
+.container {
+  padding-top: 10px;
+}
+.col {
+  min-width: 300px;
+  padding: 20px;
+}
+.row {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.example {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  &__1 {
+    background-image: url(src/assets/example1.jpg);
+  }
+  &__2 {
+    background-image: url(src/assets/example2.jpg);
+  }
+  &__3 {
+    background-image: url(src/assets/example3.jpg);
+  }
+  &__4 {
+    background-image: url(src/assets/example4.jpg);
+  }
+  &__5 {
+    background-image: url(src/assets/example5.jpg);
+  }
+  &__6 {
+    background-image: url(src/assets/example6.jpg);
+  }
+  &__7 {
+    background-image: url(src/assets/example7.jpg);
+  }
+  &__8 {
+    background-image: url(src/assets/example8.jpg);
+  }
+  &__9 {
+    background-image: url(src/assets/example9.jpg);
+  }
+}

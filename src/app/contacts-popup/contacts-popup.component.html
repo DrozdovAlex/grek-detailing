@@ -1,0 +1,35 @@
+<ng-container *ngIf="display$ | async as display">
+  <section [class.open]="display === 'open'" (click)="close()">
+    <div (click)="$event.stopPropagation()">
+      <i class="bi bi-x-circle-fill" (click)="close()"></i>
+      <h1>Online запись</h1>
+      <p style="font-size: 14px">
+        Мы перезвоним Вам для уточнения удобного времени
+      </p>
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <label for="userName"><h5>Ваше имя:</h5> </label>
+        <input
+          class="form-control"
+          id="userName"
+          type="text"
+          formControlName="userName"
+        />
+        <label for="phoneNumber"><h5>Ваш телефон:</h5> </label>
+        <input
+          class="form-control"
+          id="phoneNumber"
+          type="text"
+          formControlName="phoneNumber"
+        />
+        <button type="submit" class="button" [disabled]="userForm.invalid">
+          Жду звонка!
+        </button>
+      </form>
+      <div class="politics">
+        * Нажимая на кнопку, Вы даете согласие на обработку персональных данных
+        и
+        <label class="conf">соглашаетесь с политикой конфиденциальности</label>
+      </div>
+    </div>
+  </section>
+</ng-container>
